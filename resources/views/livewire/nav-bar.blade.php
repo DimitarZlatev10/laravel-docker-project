@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')" wire:navigate>
                         {{ __('About us') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('products')" :active="request()->routeIs('products')" wire:navigate>
+                        {{ __('Products') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -106,6 +109,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')" wire:navigate>
                 {{ __('About us') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('products')" :active="request()->routeIs('products')" wire:navigate>
+                {{ __('Products') }}
             </x-responsive-nav-link>
             @auth
             @else

@@ -2,6 +2,7 @@
 
 use App\Livewire\AboutUs;
 use App\Livewire\Home;
+use App\Livewire\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/about-us', AboutUs::class)->name('about');
-
+Route::get('/products', Products::class)->name('products');
 
 
 Route::view('dashboard', 'dashboard')
