@@ -1,3 +1,3 @@
 <div>
-    <p> mitkokurabatep</p>
+    Home
 </div>
